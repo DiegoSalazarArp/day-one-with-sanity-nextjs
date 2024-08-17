@@ -10,7 +10,6 @@ const EVENTS_QUERY = `*[
 
 export default async function IndexPage() {
   const events = await sanityFetch<SanityDocument[]>({ query: EVENTS_QUERY });
-  console.log(events)
 
   return (
     <main className="flex bg-gray-100 min-h-screen flex-col p-24 gap-12">

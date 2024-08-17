@@ -56,6 +56,8 @@ export default async function EventPage({
     new Date(date).getTime() + doorsOpen * 60000
   ).toLocaleTimeString();
 
+
+
   return (
     <main className="container mx-auto grid gap-12 p-12">
       <div className="mb-4">
